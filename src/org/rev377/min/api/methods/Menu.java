@@ -32,16 +32,16 @@ public class Menu {
 		int actionId = 35;
 		switch (actionIndex) {
 		case 1:
-			actionId = 1412;
-			break;
-		case 3:
-			actionId = 888;
-			break;
-		case 4:
 			actionId = 389;
 			break;
-		case 5:
-			actionId = 35;
+		case 2:
+			actionId = 888;
+			break;
+		case 3:
+			actionId = 892;
+			break;
+		case 4:
+			actionId = 1280;
 			break;
 		}
 		sendAction(actionId, object.getHash(), 0, object.getId());
@@ -57,16 +57,16 @@ public class Menu {
 		int actionId = 318;
 		switch (actionIndex) {
 		case 1:
-			actionId = 1668;
-			break;
-		case 2:
 			actionId = 921;
 			break;
-		case 3:
+		case 2:
 			actionId = 118;
 			break;
+		case 3:
+			actionId = 553;
+			break;
 		case 4:
-			actionId = 318;
+			actionId = 432;
 			break;
 		}
 		sendAction(actionId, character.getIndex(), 0, 0);
@@ -82,23 +82,22 @@ public class Menu {
 	 */
 	public static void transformItem(Item item, int actionIndex,
 			int interfaceParentId) {
-		int actionId = 961;
+		int actionId = 9;
 		switch (actionIndex) {
 		case 1:
-			actionId = 1094;
+			actionId = 225;
 			break;
 		case 2:
-			actionId = 891;
+			actionId = 444;
 			break;
 		case 3:
-			actionId = 52;
+			actionId = 564;
 			break;
 		case 4:
-			actionId = 961;
+			actionId = 894;
 			break;
 		}
-		sendAction(actionId, (int) item.getId() - 1, item.getSlot(),
-				interfaceParentId);
+		sendAction(actionId, (int) item.getId() - 1, item.getSlot(), 7471105);
 	}
 
 	/**
@@ -110,22 +109,19 @@ public class Menu {
 	 * @param interfaceParentId
 	 */
 	public static void transformBankItem(Item item, int actionIndex) {
-		int actionId = 894;
+		int actionId = 9;
 		switch (actionIndex) {
+		case 1:
+			actionId = 225;
+			break;
 		case 2:
-			actionId = 894;
+			actionId = 444;
 			break;
 		case 3:
 			actionId = 564;
 			break;
 		case 4:
-			actionId = 444;
-			break;
-		case 5:
-			actionId = 225;
-			break;
-		case 6:
-			actionId = 9;
+			actionId = 894;
 			break;
 		}
 		sendAction(actionId, (int) item.getId() - 1, item.getSlot(), 28377093);

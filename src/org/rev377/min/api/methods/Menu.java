@@ -110,19 +110,19 @@ public class Menu {
 	 */
 	public static void transformItem(Item item, int actionIndex,
 			int interfaceParentId) {
-		int actionId = 9;
+		int actionId = 1094;
 		switch (actionIndex) {
 		case 1:
-			actionId = 225;
+			actionId = 1094;
 			break;
 		case 2:
-			actionId = 444;
+			actionId = 891;
 			break;
 		case 3:
-			actionId = 564;
+			actionId = 52;
 			break;
 		case 4:
-			actionId = 894;
+			actionId = 961;
 			break;
 		}
 		sendAction(actionId, (int) item.getId() - 1, item.getSlot(), 7471105);

@@ -16,7 +16,7 @@ import org.rev377.min.api.wrappers.SceneObject;
  * 
  */
 public class Menu {
-	public static final int ACTION_CLICK_BUTTON = 646;
+	public static final int ACTION_CLICK_BUTTON = 518;
 	public static final int ACTION_DROP_ITEM = 891;
 	public static final int ACTION_TAKE_ITEM = 684;
 
@@ -70,6 +70,34 @@ public class Menu {
 			break;
 		}
 		sendAction(actionId, character.getIndex(), 0, 0);
+	}
+
+	public static void interactItem(Item item, int actionIndex) {
+		int actionId = 0;
+		switch (actionIndex) {
+		case 1:
+			actionId = 399; // Wield, Equip, Wear
+			break;
+		case 2:
+			actionId = 961; // Eat, Drink
+			break;
+		case 3:
+			actionId = 52; // Use
+			break;
+		case 4:
+			actionId = 891; // Drop
+			break;
+		case 5:
+			actionId = 324; // Bind
+			break;
+		case 6:
+			actionId = 1094; // Examine
+			break;
+		case 7:
+			actionId = 227; // Empty
+			break;
+		}
+		sendAction(actionId, (int) item.getId() - 1, item.getSlot(), 7471105);
 	}
 
 	/**
@@ -201,7 +229,7 @@ public class Menu {
 			constants = Context.getInstance().getHookParser().getConstants();
 		}
 
-		int index = 0;
+		int index = 3;
 		Client client = Loader.getClient();
 
 		client.getMenuAction1()[index] = cmd1;

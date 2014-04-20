@@ -201,7 +201,7 @@ public class Menu {
 			constants = Context.getInstance().getHookParser().getConstants();
 		}
 
-		int index = 3;
+		int index = 0;
 		Client client = Loader.getClient();
 
 		client.getMenuAction1()[index] = cmd1;

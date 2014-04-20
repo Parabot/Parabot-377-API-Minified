@@ -23,7 +23,7 @@ import org.rev377.min.ui.BotMenu;
  * @author Everel
  * 
  */
-@ServerManifest(author = "Everel & SingleCore", name = "Battlescape", type = Type.INJECTION, version = 0.1)
+@ServerManifest(author = "Everel & SingleCore", name = "Battlescape", type = Type.INJECTION, version = 0.2)
 public class Loader extends ServerProvider {
 
 	private Applet applet;
@@ -80,7 +80,7 @@ public class Loader extends ServerProvider {
 	public HookFile getHookFile() {
 
 		try {
-			return new HookFile(new URL("http://puu.sh/8fqZW.xml"), HookFile.TYPE_XML);
+			return new HookFile(new URL("http://bot.parabot.org/hooks/bs/bs_hooks.xml"), HookFile.TYPE_XML);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}

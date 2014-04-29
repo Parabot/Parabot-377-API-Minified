@@ -47,7 +47,7 @@ public class Loader extends ServerProvider {
 	@Override
 	public URL getJar() {
 		try {
-			return new URL("http://puu.sh/8drPt.jar");
+			return new URL("http://bot.parabot.org/servers/battlescape.jar");
 		} catch (Throwable t) {
 			t.printStackTrace();
 		}
